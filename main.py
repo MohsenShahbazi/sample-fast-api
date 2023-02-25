@@ -11,3 +11,8 @@ async def root():
 @app.get("/hello/{name}")
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
+
+
+@app.get("/hello/{id}")
+async def say_hello(id: int):
+    return {"message": f"Hello {id}"}
